@@ -20,7 +20,7 @@ import com.example.teamorange_capstone_android.HelperClasses.LocaleHelper;
 
 import java.util.Locale;
 
-
+//front screen
 public class FrontScreen extends AppCompatActivity {
     Button login_button;
     Button register_button;
