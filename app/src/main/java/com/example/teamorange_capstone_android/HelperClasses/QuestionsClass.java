@@ -12,6 +12,7 @@ public class QuestionsClass {
 
     public QuestionsClass() {
         //For Firebase
+
     }
 
     public QuestionsClass(String question, String optionA, String optionB, String optionC, String optionD, String correctAnswer, String imageUrl, int orderNo) {
