@@ -1,6 +1,5 @@
 package com.example.teamorange_capstone_android.RoomDB.AppDatabase;
 
-import com.example.teamorange_capstone_android.RoomDB.Dao.LoginDao;
 import com.example.teamorange_capstone_android.RoomDB.Entity.LoginEntity;
 
 import androidx.room.Database;

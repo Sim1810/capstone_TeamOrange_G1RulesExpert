@@ -17,29 +17,29 @@ public interface LoginDao {
 
 
     /*
-     * Insert the object in database
-     * @param loginEntity, object to be inserted
+      Insert the object in database
+
      */
     @Insert
     void insert(LoginEntity loginEntity);
 
     /*
-     * update the object in database
-     * @param loginEntity, object to be updated
+      update the object in database
+
      */
     @Update
     void update(LoginEntity loginEntity);
 
     /*
-     * delete the object from database
-     * @param loginEntity, object to be deleted
+      delete the object from database
+
      */
     @Delete
     void delete(LoginEntity loginEntity);
 
     /*
-     * delete list of objects from database
-     * @param loginEntity, array of objects to be deleted
+     delete list of objects from database
+
      */
     @Delete
     void delete(LoginEntity... loginEntities);      // LoginEntity... is varargs, loginEntities note is an array
