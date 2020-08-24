@@ -164,11 +164,19 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:background="#00000000"
                 android:text="@string/forget_password" />
-
+            <CheckBox
+                android:id="@+id/rememberMeCheckBox"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/remember_me"
+                android:textColor="@color/black" />
         </RelativeLayout>
 
 
