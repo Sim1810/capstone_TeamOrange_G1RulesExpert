@@ -26,7 +26,10 @@
             android:id="@+id/nav_profile"
             android:title="@string/profile_menu"
             android:icon="@drawable/user"/>
-
+        <item
+            android:id="@+id/nav_dark"
+            android:title="Change Theme"
+            android:icon="@drawable/circle_black_border"/>
     </group>
 
 

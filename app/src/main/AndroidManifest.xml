@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.teamorange_capstone_android">
+    package="com.android.q1learningapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,7 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Users.FaqActivity"></activity>
-        <activity android:name=".VerifyOTP" />
+        <activity android:name=".Common.LoginSignup.LoginActivity" />
+        <activity android:name=".Common.LoginSignup.SignUpActivity" />
+        <activity android:name=".Users.ProfileActivity" />
+        <activity android:name=".Users.UserDashboard" />
+        <activity android:name=".Common.FrontScreen" />
+        <activity android:name=".Common.LoginSignup.VerifyOTP" />
+        <activity android:name=".Users.AllQuizActivity" />
+        <activity android:name=".Users.ChallengeActivity" />
+        <activity android:name=".Users.AllScores" />
+        <activity android:name=".Users.QuizQuestions" />
+        <activity android:name=".Users.ScoresActivity" />
+
+
+
+
+
+
+
         <activity android:name=".Common.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,16 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Users.QuizQuestions" />
-        <activity android:name=".Users.AllQuizActivity" />
-        <activity android:name=".Users.UserDashboard" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".Common.FrontScreen" />
-        <activity android:name=".Users.ProfileActivity"/>
-        <activity android:name=".Users.ChallengeActivity"/>
-        <activity android:name=".Users.AllScores"/>
-        <activity android:name=".Users.ScoresActivity"/>
 
 
 
