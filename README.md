@@ -10,6 +10,7 @@ We (Rishabh Verma, Simranjeet Kaur, Kirandeep Kaur and Avinash Sharma) have incl
 1). Localization - The user is independent to use this app in the three most popular languages of Canada , that are : English , French and Punjabi. Learning any new thing in our language makes the grasping more effective and efficient.
 
 2). Storing the Data to Cloud platform - We have tried to implement cloud storage using Firebase. All the questions are been fetched from the cloud storage in the form of JSON file. 
+
 Note : JSON file for the questions is provided in the 46th Commit.
 
 3). Dark and Light Mode - We have made this to be capable of switching the graphics from Night to Light Mode.This could make the user experience even better and give the user interactivity.
