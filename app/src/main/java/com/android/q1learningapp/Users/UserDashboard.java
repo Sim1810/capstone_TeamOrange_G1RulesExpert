@@ -237,10 +237,13 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     @Override
     protected void onStart() {
         super.onStart();
-
         String currentLocale = LocaleHelper.getLanguage(UserDashboard.this);
         if(currentLocale.equals("pa")){
             changeLocale.setText("ਪੰਜਾਬੀ"); }
+
+        else if(currentLocale.equals("fr")){
+            changeLocale.setText("French"); }
+
         else{
             changeLocale.setText("English");
         }
@@ -248,12 +251,14 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         changeLocale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String[] Language = {"ENGLISH", "ਪੰਜਾਬੀ"};
+                final String[] Language = {"ENGLISH", "ਪੰਜਾਬੀ", "French"};
                 final int checkedItem;
                 String currentLocale = LocaleHelper.getLanguage(UserDashboard.this);
-                if(currentLocale.equals("pa")){
-                    checkedItem = 1;}
-                else{
+
+                if (currentLocale.equals("pa")||currentLocale.equals("fr")) {
+                    checkedItem = 1;
+                }
+                else {
                     checkedItem = 0;
                 }
                 final AlertDialog.Builder builder = new AlertDialog.Builder(UserDashboard.this);
@@ -276,6 +281,15 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
                                     context = LocaleHelper.setLocale(UserDashboard.this, "pa");
                                     changeLanguage("pa");
                                 }
+
+                                if(Language[which].equals("French"))
+                                {
+                                    context = LocaleHelper.setLocale(UserDashboard.this, "fr");
+                                    changeLanguage("fr");
+                                }
+
+
+
                             }
                         })
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -289,7 +303,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             }
         });
     }
-
     private boolean isConnected(UserDashboard userDashboard) {
         ConnectivityManager connectivityManager = (ConnectivityManager)userDashboard.getSystemService(Context.CONNECTIVITY_SERVICE);
 

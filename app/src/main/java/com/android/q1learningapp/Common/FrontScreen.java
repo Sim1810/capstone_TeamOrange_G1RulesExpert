@@ -77,7 +77,6 @@ public class FrontScreen extends AppCompatActivity {
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
-
     @Override
     public void onBackPressed() {
         finishAffinity();
@@ -89,21 +88,37 @@ public class FrontScreen extends AppCompatActivity {
         String currentLocale = LocaleHelper.getLanguage(FrontScreen.this);
         if(currentLocale.equals("pa")){
             changeLocale.setText("ਪੰਜਾਬੀ");
-        } else{
+        }
+
+        else if(currentLocale.equals("fr")){
+            changeLocale.setText("French");
+        }
+
+
+
+        else{
             changeLocale.setText("English");
         }
 
         changeLocale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String[] Language = {"ENGLISH", "ਪੰਜਾਬੀ"};
+                final String[] Language = {"ENGLISH", "ਪੰਜਾਬੀ", "French"};
                 final int checkedItem;
                 String currentLocale = LocaleHelper.getLanguage(FrontScreen.this);
-                if(currentLocale.equals("pa")){
-                    checkedItem = 1;}
-                else{
+
+                if (currentLocale.equals("pa")||currentLocale.equals("fr")) {
+                    checkedItem = 1;
+                }
+                else {
                     checkedItem = 0;
                 }
+
+
+
+
+
+
                 final AlertDialog.Builder builder = new AlertDialog.Builder(FrontScreen.this);
                 builder.setTitle(getString(R.string.select_a_language))
                         .setSingleChoiceItems(Language, checkedItem, new DialogInterface.OnClickListener() {
@@ -124,6 +139,18 @@ public class FrontScreen extends AppCompatActivity {
                                     context = LocaleHelper.setLocale(FrontScreen.this, "pa");
                                     changeLanguage("pa");
                                 }
+
+
+                                if(Language[which].equals("French"))
+                                {
+                                    context = LocaleHelper.setLocale(FrontScreen.this, "pa");
+                                    changeLanguage("fr");
+                                }
+
+
+
+
+
                             }
                         })
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
