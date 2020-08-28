@@ -4,11 +4,11 @@
     <color name="colorPrimaryDark">#113C57</color>
     <color name="colorAccent">#113C57</color>
 
-    <color name="lightGrey">#708090</color>
+    <color name="lightGrey">#009688</color>
     <color name="white">#113C57</color>
-    <color name="black">#fff</color>
+    <color name="black">#D8D8D8 </color>
     <color name="blueGreen">#009688</color>
-    <color name="green">#6CBF6F</color>
+    <color name="green">#000000</color>
     <color name="backgroundColor">#708090</color>
     <color name="textColor">#fff</color>
 
